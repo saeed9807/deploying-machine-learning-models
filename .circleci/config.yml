@@ -54,7 +54,7 @@ jobs:
       - run:
           name: Deploy to Railway App (You must set RAILWAY_TOKEN env var)
           command: |
-            cd section-07-ci-and-publishing/house-prices-api && railway up --detach
+            cd section-07-ci-and-publishing/house-prices-api && railway up --service <b1fa0235-95ec-4742-a7c4-1131ad0a66e6> --detach
 
   section_07_test_and_upload_regression_model:
     <<: *defaults
